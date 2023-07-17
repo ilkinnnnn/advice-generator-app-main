@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    font-family: Manrope;
+    background-color: hsl(218, 23%, 16%);
+}
+
+
+
+main {
+    background-color: hsl(217, 19%, 24%);
+    text-align: center;
+    padding: 30px 20px 60px 20px;
+    position: relative;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 15px hsl(218, 23%, 15%);
+}
+
+
+
+.advice-id {
+    letter-spacing: 2px;
+    color: hsl(150, 100%, 66%);
+}
+
+
+.advice-text {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+
+#pattern-divider-mobile {
+    display: none;
+}
+
+
+
+#change-quote {
+    height: 60px;
+    width: 60px;
+    padding-top: 3px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -30px;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    transition: background-color 0.05s;
+}
+
+
+
+#change-quote:hover {
+    box-shadow: 0 0 30px  hsl(150, 100%, 66%);
+}
+
+
+
+@media (max-width: 450px) {
+    main {
+        width: 360px;
+        margin-bottom: 100px;
+    }
+
+    #change-quote:hover {
+        box-shadow: none;
+    }
+
+    #pattern-divider-desktop {
+        display: none;
+    }
+
+    #pattern-divider-mobile {
+        display: block;
+    }
+
+}
